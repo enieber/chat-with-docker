@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <title>Chat </title>
+
+  </head>
+  <body>
+    <h2>Real time application</h2>
+
+    <ul id="messages"></ul>
+
+    <form id="form">
+      <input id="text" type="text">
+      <button id="sendButton"> Send </button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io()
+      document.getElementById('form').addEventListener('submit', function(e){
+        e.preventDefault()
+      })
+
+      document.getElementById('sendButton').onclick = function () {
+        var msg = document.getElementById('text')
+
+        socket.emit('client emit', msg.value)
+        msg.value = ''
+      }
+
+      socket.on('server emit', function(msg) {
+        var messages = document.getElementById('messages')
+        var newLi = document.createElement('li')
+
+        newLi.innerHTML = msg
+        messages.appendChild(newLi)
+
+      })
+    </script>
+
+  </body>
+</html>
