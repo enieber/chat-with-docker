@@ -1,0 +1,21 @@
+version: '2'
+services:
+  app:
+    build:
+        context: containers/nodejs/
+        dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ".:/src/"
+    links:
+      - db
+  db:
+    build:
+        context: containers/rethinkdb/
+        dockerfile: Dockerfile
+    ports:
+      - "28015:28015"
+      - "8080:8080"
+    volumes:
+      - ".:/data"

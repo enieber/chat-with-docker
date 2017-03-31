@@ -1,0 +1,27 @@
+2017-03-30T23:54:44.970854353 0.480561s notice: Recursively removing directory /data/rethinkdb_data/tmp
+2017-03-30T23:54:45.034059617 0.543775s notice: Initializing directory /data/rethinkdb_data
+2017-03-30T23:54:45.034227345 0.543933s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/data/rethinkdb_data' did not already exist or is empty.)
+2017-03-30T23:54:45.034300095 0.544006s notice: Running rethinkdb 2.3.5 (GCC 6.3.0)...
+2017-03-30T23:54:45.172782933 0.682490s notice: Running on Linux 4.4.0-70-generic x86_64
+2017-03-30T23:54:45.172902302 0.682608s notice: Loading data from directory /data/rethinkdb_data
+2017-03-30T23:54:45.692600204 1.202306s info: Automatically using cache size of 187 MB
+2017-03-30T23:54:45.702115419 1.211821s notice: Listening for intracluster connections on port 29015
+2017-03-30T23:54:45.754276891 1.263983s notice: Listening for client driver connections on port 28015
+2017-03-30T23:54:45.754473543 1.264179s notice: Listening for administrative HTTP connections on port 8080
+2017-03-30T23:54:45.754479971 1.264185s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-03-30T23:54:45.754490551 1.264196s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-03-30T23:54:45.754494182 1.264199s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-03-30T23:54:45.754500978 1.264206s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-03-30T23:54:45.754509831 1.264215s notice: Server ready, "62d903f958ac_bmf" 8703088a-b93e-4220-9ffd-dbf3a8d791d4
+2017-03-31T00:00:19.812316573 0.061083s notice: Running rethinkdb 2.3.5 (GCC 6.3.0)...
+2017-03-31T00:00:19.814383042 0.063144s notice: Running on Linux 4.4.0-70-generic x86_64
+2017-03-31T00:00:19.814466883 0.063228s notice: Loading data from directory /data/rethinkdb_data
+2017-03-31T00:00:19.920288322 0.169049s info: Automatically using cache size of 252 MB
+2017-03-31T00:00:19.921239810 0.170001s notice: Listening for intracluster connections on port 29015
+2017-03-31T00:00:19.923782764 0.172543s notice: Listening for client driver connections on port 28015
+2017-03-31T00:00:19.924020332 0.172781s notice: Listening for administrative HTTP connections on port 8080
+2017-03-31T00:00:19.924027128 0.172788s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-03-31T00:00:19.924039355 0.172800s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-03-31T00:00:19.924045698 0.172806s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-03-31T00:00:19.924056764 0.172817s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-03-31T00:00:19.924067084 0.172828s notice: Server ready, "62d903f958ac_bmf" 8703088a-b93e-4220-9ffd-dbf3a8d791d4
