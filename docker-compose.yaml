@@ -11,11 +11,8 @@ services:
     links:
       - db
   db:
-    build:
-        context: containers/rethinkdb/
-        dockerfile: Dockerfile
+    image: rethinkdb
     ports:
-      - "28015:28015"
       - "8080:8080"
-    volumes:
-      - ".:/data"
+      - "28015:28015"
+      - "29015:29015"

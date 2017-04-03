@@ -25,3 +25,20 @@
 2017-03-31T00:00:19.924045698 0.172806s notice: Listening on http addresses: 127.0.0.1, ::1
 2017-03-31T00:00:19.924056764 0.172817s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
 2017-03-31T00:00:19.924067084 0.172828s notice: Server ready, "62d903f958ac_bmf" 8703088a-b93e-4220-9ffd-dbf3a8d791d4
+2017-03-31T02:49:49.597424018 0.852348s notice: Running rethinkdb 2.3.5 (GCC 6.3.0)...
+2017-03-31T02:49:49.783733084 1.038652s notice: Running on Linux 4.4.0-70-generic x86_64
+2017-03-31T02:49:49.783834467 1.038752s notice: Loading data from directory /data/rethinkdb_data
+2017-03-31T02:49:50.107430874 1.362349s info: Automatically using cache size of 470 MB
+2017-03-31T02:49:50.140906329 1.395824s notice: Listening for intracluster connections on port 29015
+2017-03-31T02:49:50.234630393 1.489548s notice: Listening for client driver connections on port 28015
+2017-03-31T02:49:50.234856498 1.489774s notice: Listening for administrative HTTP connections on port 8080
+2017-03-31T02:49:50.234863984 1.489781s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-03-31T02:49:50.234870954 1.489788s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-03-31T02:49:50.234886565 1.489804s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-03-31T02:49:50.234897641 1.489815s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-03-31T02:49:50.234909064 1.489827s notice: Server ready, "62d903f958ac_bmf" 8703088a-b93e-4220-9ffd-dbf3a8d791d4
+2017-03-31T02:51:05.375358194 76.630276s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2017-03-31T02:51:05.375630064 76.630548s notice: Shutting down client connections...
+2017-03-31T02:51:05.375748090 76.630666s notice: All client connections closed.
+2017-03-31T02:51:05.375756403 76.630674s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-03-31T02:51:05.385969335 76.640887s notice: Storage engine shut down.
