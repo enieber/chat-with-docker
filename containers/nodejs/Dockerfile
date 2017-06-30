@@ -1,14 +1,16 @@
 FROM node:7.7-alpine
 
-RUN mkdir -p /src
-WORKDIR /src
-ADD . .
+RUN mkdir app/
 
-# If you have native dependencies, you'll need extra tools
-# RUN apk add --no-cache make gcc g++ python
+COPY . app/
 
-# If you need npm, don't use a base tag
+COPY package.json app/
+
 RUN npm install
 
+
+WORKDIR app/
+
 EXPOSE 3000
-CMD ["node", "server.js"]
+
+CMD ["npm", "start"]

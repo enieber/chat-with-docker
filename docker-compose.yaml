@@ -1,13 +1,9 @@
 version: '2'
 services:
-  app:
-    build:
-        context: containers/nodejs/
-        dockerfile: Dockerfile
+  app:  
+    image: node-chat
     ports:
       - "3000:3000"
-    volumes:
-      - ".:/src/"
     links:
       - db
   db:

@@ -2,8 +2,8 @@ const express = require('express')
 const socket = require('socket.io')
 
 const app = express()
-const io = socket.listen(app.listen(80))
-console.log('App listening on 80')
+const io = socket.listen(app.listen(3000))
+console.log('App listening on 3000')
 
 
 
