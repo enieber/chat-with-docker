@@ -13,6 +13,6 @@
   "dependencies": {
     "express": "^4.15.2",
     "rethinkdb": "^2.3.3",
-    "socket.io": "^1.7.3"
+    "socket.io": "^2.4.0"
   }
 }
