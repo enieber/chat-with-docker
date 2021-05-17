@@ -2,6 +2,8 @@ version: '2'
 services:
   app:  
     image: node-chat
+    build: 
+      context: .
     ports:
       - "3000:3000"
     links:

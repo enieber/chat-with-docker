@@ -1,15 +1,13 @@
 FROM node:7.7-alpine
 
-RUN mkdir app/
+WORKDIR app/
 
-COPY . app/
-
-COPY package.json app/
+COPY package.json .
 
 RUN npm install
 
+COPY . .
 
-WORKDIR app/
 
 EXPOSE 3000
 

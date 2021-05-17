@@ -5,9 +5,6 @@ const app = express()
 const io = socket.listen(app.listen(3000))
 console.log('App listening on 3000')
 
-
-
-
 io.sockets.on('connection', (sock) => {
   console.log('connected to socket')
   sock.on('client emit', (msg) => {
@@ -16,3 +13,4 @@ io.sockets.on('connection', (sock) => {
 })
 
 app.use(express.static(__dirname + "/public"))
+
